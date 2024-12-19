@@ -27,7 +27,6 @@ const OurChefPage: React.FC = () => {
     <main>
       <Header />
 
-      <HeroSection />
 
       <div>
 
