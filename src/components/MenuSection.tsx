@@ -38,11 +38,10 @@ const MenuSection: React.FC = () => {
             <button
               key={index}
               onClick={() => setSelectedCategory(category)}
-              className={`text-lg font-semibold ${
-                selectedCategory === category
+              className={`text-lg font-semibold ${selectedCategory === category
                   ? "text-orange-500 underline"
                   : "text-gray-300 hover:text-orange-400"
-              }`}
+                }`}
             >
               {category}
             </button>
@@ -50,7 +49,7 @@ const MenuSection: React.FC = () => {
         </div>
 
         {/* Menu Items Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="flex gap-8 w-ful">
           {/* Left side image */}
           <div className="flex justify-left items-center">
             <img
@@ -61,12 +60,12 @@ const MenuSection: React.FC = () => {
           </div>
 
           {/* Right side menu list */}
-          <div className="grid grid-col-2 space-y-3"> 
+          <div className="flex-1 flex flex-wrap justify-center items-center w-full">
             {filteredMenuItems.map((item, index) => (
               <div
                 key={index}
-                className="p-2  min-h-5 max-w-60">
-                <div className="border" >
+                className="min-h-5 max-w-60">
+                <div className="border p-4 m-2" >
                   <img
                     src={item.image}
                     alt={item.name}
@@ -74,15 +73,15 @@ const MenuSection: React.FC = () => {
                   />
                   <div>
                     <h1 className="font-semibold text-sm">{item.name}</h1>
-                    <p className="text-yellow-400 font-bold text-sm">{item.price }</p>
-                    <p className="text-xs text-gray-400"> 
-                      Lacus nisl, et ac dapibus velit in consequat. 
+                    <p className="text-yellow-400 font-bold text-sm">{item.price}</p>
+                    <p className="text-xs text-gray-400">
+                      Lacus nisl, et ac dapibus velit in consequat.
                     </p>
                   </div>
 
-                  
+
                 </div>
-                
+
               </div>
             ))}
           </div>

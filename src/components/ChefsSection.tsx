@@ -6,11 +6,11 @@ const ChefsSection: React.FC = () => {
     { name: "Chef Alex", image: "/images/chef1.png" },
     { name: "Chef Maria", image: "/images/chef2.png" },
     { name: "Chef John", image: "/images/chef3.png" },
-    { name: "Chef John", image: "/images/chef4.png" },
+    { name: "Chef Mohd", image: "/images/chef4.png" },
   ];
 
   return (
-    <section className="bg-black text-white py-12">
+    <section className="bg-black text-white py-12 flex flex-col justify-center items-center">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-semibold mb-6">Meet Our Chef</h2>
         <div className="flex justify-center gap-8">
@@ -28,8 +28,8 @@ const ChefsSection: React.FC = () => {
           ))}
         </div>
       </div>
-      <Link href="/our-chef">
-        <button className="border-l-yellow-500 border rounded-full p-2">
+      <Link href="/ourchef" className="">
+        <button className="border-l-yellow-500 px-10  bg-yellow-700 text-center border rounded-full p-2">
           See More
         </button>
       </Link>

@@ -36,7 +36,8 @@ const OurChefPage: React.FC = () => {
           className="h-56 bg-cover bg-center flex flex-col items-center justify-center text-white text-3xl font-bold"
           style={{ backgroundImage: "url('/images/banner-chef.png')" }}>
           <p className="justify-center">Our Chef </p>
-          <p className="text-xs">HOme &gt; <span className="text-orange-500"> Chef</span> </p>
+          <p className="text-xs">Home &gt; <span className="text-orange-500"> 
+            Chef</span> </p>
         </div>
 
         {/* Chef Grid Section */}

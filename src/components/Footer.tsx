@@ -15,6 +15,7 @@ export default Footer;
 
 
 "use client";
+import Link from "next/link";
 import React from "react";
 
 const Footer: React.FC = () => {
@@ -58,11 +59,11 @@ const Footer: React.FC = () => {
           {/* Useful Links */}
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Useful Links</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 flex flex-col">
               {["About", "Home", "Team", "Menu", "Contact"].map((link, index) => (
-                <li key={index} className="hover:text-orange-500 cursor-pointer">
+                <Link href={link === "Home" ? "/" : "#"} key={index} className="hover:text-orange-500 cursor-pointer" >
                   {link}
-                </li>
+                </Link>
               ))}
             </ul>
           </div>
