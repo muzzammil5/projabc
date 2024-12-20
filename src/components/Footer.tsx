@@ -71,12 +71,12 @@ const Footer: React.FC = () => {
           {/* Help */}
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Help?</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 flex flex-col" >
               {["FAQ", "Terms & Conditions", "Support", "Privacy"].map(
                 (link, index) => (
-                  <li key={index} className="hover:text-orange-500 cursor-pointer">
+                  <Link href={link === "FAQ" ? "/faq" : "#"} key={index} className="hover:text-orange-500 cursor-pointer" >
                     {link}
-                  </li>
+                  </Link>
                 )
               )}
             </ul>
