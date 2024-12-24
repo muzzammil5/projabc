@@ -1,9 +1,9 @@
 'use client'
 import React, { useState } from "react"
-import Header from "/projabc/src/components/Header"; // Import your existing Header component
-import Hero from "/projabc/src/components/Hero"; // Import your existing Hero component
-import Footer from "/projabc/src/components/Footer"; // Import your existing Footer component
-
+import Header from "@/components/Header"; // Import your existing Header component
+import Hero from "@/components/Hero"; // Import your existing Hero component
+import Footer from "@/components/Footer"; // Import your existing Footer component
+// ab code ko push kro aur dekho 
 const FAQPage: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
