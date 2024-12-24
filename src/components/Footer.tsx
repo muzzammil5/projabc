@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
         {/* Top Section */}
         <div className="flex flex-wrap justify-between mb-8">
           <h2 className="text-2xl font-bold text-white">
-            <span className="text-orange-500">Still</span> You Need Our Support?
+            <span className="text-orange-500">St</span>ill You Need Our Support?
           </h2>
           <div className="flex space-x-2">
             <input
@@ -36,9 +36,10 @@ const Footer: React.FC = () => {
             <button className="bg-orange-500 text-white px-4 rounded-r-md hover:bg-orange-600">
               Subscribe Now
             </button>
+
           </div>
         </div>
-
+        <h1 className="mb-10">Don't wait make a smart & logical quote here. Its pretty easy.</h1>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* About Us */}
           <div>
