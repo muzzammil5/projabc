@@ -60,7 +60,7 @@ export default function Home() {
         </div>
 
       </header> */}
-      <Header />
+        {/* <Header /> */}
       <Hero />
       <FoodCategory />
       <WhyChooseUs />
