@@ -60,7 +60,7 @@ export default function Home() {
         </div>
 
       </header> */}
-        {/* <Header /> */}
+      {/* <Header /> */}
       <Hero />
       <FoodCategory />
       <WhyChooseUs />
@@ -70,7 +70,7 @@ export default function Home() {
       <ChefsSection />
       <TestimonialSection />
       <BlogSection />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 };
