@@ -44,7 +44,7 @@ const FAQPage: React.FC = () => {
     return (
         <div className="bg-black text-white">
             {/* Header */}
-            <Header />
+
 
 
             <div className="max-w-6xl mx-auto px-6 py-12">
@@ -74,7 +74,7 @@ const FAQPage: React.FC = () => {
             </div>
 
             {/* Footer */}
-            <Footer />
+
         </div>
     );
 };
